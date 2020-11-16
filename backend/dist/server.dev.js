@@ -9,7 +9,7 @@ var cors = require('@koa/cors');
 
 var ethers = require('ethers');
 
-var PaymentProcessor = require('../build/contracts/PaymentProcessor.json');
+var PaymentProcessor = require('../frontend/src/contracts/PaymentProcessor.json');
 
 var _require = require('./db.js'),
     Payment = _require.Payment;

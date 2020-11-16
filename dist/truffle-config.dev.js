@@ -1,3 +1,5 @@
+"use strict";
+
 /**
  * Use this file to configure your truffle project. It's seeded with some
  * common settings for different networks and features like migrations,
@@ -17,13 +19,11 @@
  * phrase from a file you've .gitignored so it doesn't accidentally become public.
  *
  */
-
 // const HDWalletProvider = require('@truffle/hdwallet-provider');
 // const infuraKey = "fj4jll3k.....";
 //
 // const fs = require('fs');
 // const mnemonic = fs.readFileSync(".secret").toString().trim();
-
 module.exports = {
   /**
    * Networks define how you connect to your ethereum client and let you set the
@@ -37,9 +37,7 @@ module.exports = {
   //frontned/serc won't be able to move the contract json file to frontend hence we adding a new line here
   //react will complain, as react is configured such a way that nothing can't be imported out of SRC directory
   contracts_build_directory: './frontend/src/contracts',
-
-  networks: {
-    // Useful for testing. The `development` name is special - truffle uses it by default
+  networks: {// Useful for testing. The `development` name is special - truffle uses it by default
     // if it's defined here and no other network is specified at the command line.
     // You should run a client (like ganache-cli, geth or parity) in a separate terminal
     // tab if you use this network and you must also set the `host`, `port` and `network_id`
@@ -76,16 +74,13 @@ module.exports = {
     // production: true    // Treats this network as if it was a public net. (default: false)
     // }
   },
-
   // Set default mocha options here, use special reporters etc.
-  mocha: {
-    // timeout: 100000
+  mocha: {// timeout: 100000
   },
-
   // Configure your compilers
   compilers: {
     solc: {
-       version: "0.6.2",    // Fetch exact version from solc-bin (default: truffle's version)
+      version: "0.6.2" // Fetch exact version from solc-bin (default: truffle's version)
       // docker: true,        // Use "0.5.1" you've installed locally with docker (default: false)
       // settings: {          // See the solidity docs for advice about optimization and evmVersion
       //  optimizer: {
@@ -94,6 +89,7 @@ module.exports = {
       //  },
       //  evmVersion: "byzantium"
       // }
-    },
-  },
+
+    }
+  }
 };

@@ -3,7 +3,7 @@ const Router = require('@koa/router');
 //used to query different URL from frontend which is otherwise blocked from firewall
 const cors = require('@koa/cors');
 const ethers = require('ethers');
-const PaymentProcessor = require('../build/contracts/PaymentProcessor.json');
+const PaymentProcessor = require('../frontend/src/contracts/PaymentProcessor.json');
 const{Payment} = require('./db.js');
 const { formatBytes32String } = require('ethers/lib/utils');
 
