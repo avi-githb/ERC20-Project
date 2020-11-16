@@ -1,0 +1,24 @@
+{
+  "name": "blockchain-ecommerce-app",
+  "version": "1.0.0",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@koa/cors": "^3.1.0",
+    "@koa/router": "^10.0.0",
+    "@openzeppelin/contracts": "^3.2.0",
+    "ethers": "^5.0.19",
+    "koa": "^2.13.0",
+    "mongoose": "^5.10.14"
+  },
+  "devDependencies": {},
+  "description": ""
+}
